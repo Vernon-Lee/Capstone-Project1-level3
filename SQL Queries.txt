@@ -1,0 +1,72 @@
+CREATE DATABASE poisepms;
+
+USE poisepms;
+
+CREATE TABLE `architect` (
+  `name` varchar(15) NOT NULL,
+  `surname` varchar(15) NOT NULL,
+  `phone_number` varchar(25) DEFAULT NULL,
+  `email` varchar(25) DEFAULT NULL,
+  `address` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`name`,`surname`)
+);
+
+CREATE TABLE 'customer` (
+  `name` varchar(15) NOT NULL,
+  `surname` varchar(15) NOT NULL,
+  `phone_number` varchar(25) DEFAULT NULL,
+  `email` varchar(25) DEFAULT NULL,
+  `address` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`name`,`surname`)
+);
+
+CREATE TABLE `project` (
+  `projectNumber` int NOT NULL,
+  `projectName` varchar(25) NOT NULL,
+  `buildingType` varchar(25) DEFAULT NULL,
+  `address` varchar(25) DEFAULT NULL,
+  `erfNumber` varchar(10) DEFAULT NULL,
+  `totFee` bigint DEFAULT NULL,
+  `totPaid` bigint DEFAULT NULL,
+  `startDate` date DEFAULT NULL,
+  `Deadline` date DEFAULT NULL,
+  `Complete` varchar(3) DEFAULT NULL,
+  PRIMARY KEY (`projectNumber`,`projectName`)
+) ;
+
+CREATE TABLE `project_manager` (
+  `name` varchar(15) NOT NULL,
+  `surname` varchar(15) NOT NULL,
+  `phone_number` varchar(25) DEFAULT NULL,
+  `email` varchar(25) DEFAULT NULL,
+  `address` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`name`,`surname`)
+);
+
+CREATE TABLE `structural_engineer` (
+  `name` varchar(15) NOT NULL,
+  `surname` varchar(15) NOT NULL,
+  `phoneNumber` varchar(25) DEFAULT NULL,
+  `email` varchar(25) DEFAULT NULL,
+  `address` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`name`,`surname`)
+);
+
+CREATE TABLE `architect` (
+  `name` varchar(15) NOT NULL,
+  `surname` varchar(15) NOT NULL,
+  `phone_number` varchar(25) DEFAULT NULL,
+  `email` varchar(25) DEFAULT NULL,
+  `address` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`name`,`surname`)
+);
+
+
+
+
+
+
+
+
+
+
